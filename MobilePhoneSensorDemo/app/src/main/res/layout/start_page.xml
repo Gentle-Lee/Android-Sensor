@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ReadTime:"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/readTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="secs"
+            android:layout_toRightOf="@id/readTime"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/StartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+    <Button
+        android:id="@+id/GenerateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GenerateTxtFile"/>
+</LinearLayout>
